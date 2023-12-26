@@ -1,0 +1,880 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+#topic{
+  position:absolute;
+}
+.navbar{
+  display: flex;
+  height: 12vh;
+  width: 100vw;
+  background-color: rgba(20, 20, 20, 0.95);
+  justify-content: space-evenly;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: fixed;
+  z-index: 2;
+}
+.navcomponents{
+  color: white;
+  margin-top: 5vh;
+  font-size: 22px;
+}
+#backimg{
+  content: "";
+  height: 100vh;
+  width:1536px;
+  background-image: url(/assets/greenbackground.jpg);
+  background-size:cover;
+  background-position: center;
+  background-color: black;
+  position: fixed;
+  z-index: -1;
+  ;
+}
+#name{
+  margin-right: 25vw;
+  font-size:35px;
+  font-weight: 500;
+  margin-top: 3.5vh;
+}
+#name:hover{
+  box-shadow: inset 0px -4px rgba(109,26,54,0.9);
+  transition-duration: 0.2s;
+}
+#articles{
+  margin-left: 400px;
+}
+#articles:hover{
+  box-shadow: inset 0px -4px rgba(109,26,54,0.9);
+  transition-duration: 0.2s;
+}
+#posts:hover{
+  box-shadow: inset 0px -4px rgba(109,26,54,0.9);
+  transition-duration: 0.2s;
+}
+#merch:hover{
+  box-shadow: inset 0px -4px rgba(109,26,54,0.9);
+  transition-duration: 0.2s;
+}
+#aboutme:hover{
+  box-shadow: inset 0px -4px rgba(109,26,54,0.9);
+  transition-duration: 0.2s;
+}
+#profilepic{
+  margin-top: 18vh;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 1;
+  background-image: url(/assets/profilepic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#textcontainer{
+  width: 80vw;
+  background-color: rgba(0,0,0, 0.5);
+  margin-top: -140px;
+  border-radius: 2%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 22px;
+}
+#about{
+  margin: 50px 60px 60px 60px;
+}
+.sociallinks{
+  display:inline-block;
+}
+#links{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.logo{
+  height: 60px;
+  width: 40px;
+  margin: 10px;
+}
+#youtube{
+  width:44px;
+  margin-top:14px;
+}
+#linkedin{
+  margin-right: 30vw;
+}
+#gmail{
+  width:44px;
+}
+#platforms{
+  margin: 55px 71vw 0px 0px;
+}
+#email{
+  width:auto;
+  margin-right: 0;
+  margin-left: 9px;
+}
+#latestblog{
+  width: 35vw;
+  background-color:rgba(255,255,255,1);
+  border-radius: 3%;
+}
+.blogheader{
+  margin-top: 15px;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+  font-family:cursive;
+}
+.blogtext{
+  margin-top: 15px;
+  color: black;
+  text-align: center;
+  font-size: 22px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 10px;
+}
+#randomblog{
+  width: 35vw;
+  background-color:rgba(255,255,255,1);
+  border-radius: 3%;
+  margin-left: 2vw ;
+}
+#blogpost{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  margin-right: 2vw;
+}
+#ruler{
+  border-color: rgb(70, 69, 69);
+}
+#footerbar{
+  height:155px;
+  width:100vw;
+  background-color: rgb(30, 29, 29);
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+#footerleft{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 55vw;
+}
+#footerright{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#poweredby{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#manage{
+  margin-bottom: 25px;
+}
+#since2018{
+  margin-bottom: 51px;
+}
+.footeritems{
+  color: rgb(70, 69, 69);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  margin: 0px 0px 10px 2vw;
+  font-size: smaller;
+  font-weight: 300;
+}
+#ytlogo{
+  margin-top: 75px;
+  opacity: 0.3;
+  margin-right: 5vw;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1300px)
+{
+  #name{
+    margin-right: 0vw;
+    font-size:35px;
+    font-weight: 500;
+  }
+  #footerleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 35vw;
+  }
+  #profilepic{
+    height: 240px;
+    width: 240px;
+    margin-right: 7vw;
+  }
+  #linkedin{
+    margin-right: 22vw;
+  }
+  #textcontainer{
+    border-radius: 0;
+    width: 88vw;
+  }
+  #gmail{
+    margin-top: 15px;
+  }
+  #latestblog{
+    width:38vw;
+  }
+  #randomblog{
+    width:38vw;
+  }
+}
+@media (max-width:1100px)
+{
+  #name{
+    margin-right: 0vw;
+    font-size:35px;
+    font-weight: 500;
+  }
+  #articles{
+    margin-left: 200px;
+  }
+  #footerleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 15vw;
+  }
+  #profilepic{
+    height: 200px;
+    width: 200px;
+    margin-right: 40vw;
+    margin-top: 100px;
+    position: relative;
+    top:100px;
+  }
+  #linkedin{
+    margin-right: 0vw;
+  }
+  #links{
+    flex-wrap: wrap;
+    height: 135px;
+    width:360px;
+    margin-left:370px;
+  }
+  .logo{
+    height: 45px;
+  }
+  #platforms{
+    margin-right: 0;
+    margin-left: 8vw;
+  }
+  #textcontainer{
+    font-size: 20px;
+  }
+  #latestblog{
+    width:40vw;
+  }
+  #randomblog{
+    width:40vw;
+  }
+  .blogtext{
+    font-size: 20px;
+  }
+  .blogheader{
+    font-size: 26px;
+  }
+}
+@media (max-width:900px)
+{
+  #name{
+    margin-right: 0vw;
+    font-size:35px;
+    font-weight: 500;
+    margin-left: 2vw;
+  }
+  #articles{
+    margin-left: 50px;
+  }
+  #footerleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 0vw;
+  }
+  #profilepic{
+    height: 180px;
+    width: 180px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  #about{
+    margin: 40px 40px 40px 40px;
+    text-align:justify;
+  }
+  #linkedin{
+    margin-right: 0vw;
+  }
+  #links{
+    margin-left:300px;
+  }
+  #platforms{
+    margin-right: 0;
+    margin-left: 2vw;
+  }
+  #blogpost{
+    flex-direction: column;
+    margin-left: 2vw;
+    align-items: center;
+  }
+  #latestblog{
+    width:84vw;
+    margin-bottom: 15px;
+  }
+  #randomblog{
+    width:84vw;
+    margin-bottom: 15px;
+    margin-right: 2vw;
+  }
+  #textcontainer{
+    font-size: 20px;
+  }
+  .blogtext{
+    font-size: 20px;
+  }
+  .blogheader{
+    font-size: 26px;
+  }
+}
+@media (max-width:800px)
+{
+  #name{
+    margin-right: 0vw;
+    font-size:28px;
+    font-weight: 500;
+  }
+  .navcomponents{
+    color: white;
+    margin-top: 5vh;
+    font-size: 16px;
+  }
+  .navbar{
+    height: 10vh;
+    margin-bottom: 0;
+  }
+  #articles{
+    margin-left: 50px;
+  }
+  #footerleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 0vw;
+  }
+  #profilepic{
+    height: 180px;
+    width: 180px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  #about{
+    margin: 40px 35px 40px 35px;
+  }
+  #linkedin{
+    margin-right: 0vw;
+  }
+  #links{
+    margin-left:300px;
+  }
+  #platforms{
+    margin-right: 0;
+    margin-left: 2vw;
+  }
+  #textcontainer
+  {
+    width: 90vw;
+    font-size: 18px;
+  }
+  .blogtext{
+    font-size: 18px;
+  }
+  .blogheader{
+    font-size: 24px;
+  }
+  .logo{
+    margin:5px;
+  }
+  #youtube{
+    margin-top:11px;
+  }
+}
+@media (max-width:650px)
+{
+  .navbar{
+    height: 8vh;
+    margin-bottom: 0;
+  }
+  .navcomponents{
+    margin-top: 22px;
+    font-size: 15px;
+  }
+  #name{
+    margin-top: 17px;
+    font-size: 24px;
+  }
+  #articles{
+    margin-left: 5vw;
+  }
+  #links a {
+    scale: 0.8;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #links{
+    height: 100px;
+  }
+  .logo{
+    height: 44px;
+  }
+  #email{
+    height: 50px;
+  }
+  #profilepic{
+    height: 160px;
+    width: 160px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    top:80px;
+    margin-right: 47vw;
+  }
+  #name{
+    margin-right: 0vw;
+    font-size:24px;
+    font-weight: 500;
+  }
+  #about{
+    margin: 40px 25px 30px 25px;
+  }
+  #textcontainer
+  {
+    width: 94vw;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  #blogpost{
+    margin-bottom:10px;
+  }
+  .blogtext{
+    font-size: 16px;
+  }
+  .blogheader{
+    font-size: 22px;
+  }
+  #footerbar{
+    height:155px;
+    width:100vw;
+    flex-direction: row;
+    justify-content:flex-start;
+  }
+  #footerleft{
+    margin-right: 5vw;
+  }
+}
+@media (max-width:500px)
+{
+  .navbar{
+    height: 11vh;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .navcomponents{
+    margin-top: 6px;
+    font-size: 15px;
+    
+    height: 30px;
+  }
+  #aboutme{
+    margin-right: 0;
+  }
+  #name{
+    margin-top: 13px;
+    font-size: 24px;
+    width:100vw;
+    margin-bottom: 5px;
+  }
+  #name:hover{
+    box-shadow: inset 0px -4px rgba(109,26,54,0);
+    transition-duration: 0.2s;
+  }
+  #articles{
+    margin-left: 0vw;
+  }
+  #links a {
+    scale: 0.6;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #links{
+    margin-left: 265px;
+  }
+  #gmail{
+    margin-left: 0;
+    margin-right: 0;
+    scale:0.8;
+    margin-top:11px;
+  }
+  #linkedin{
+    margin-top: 5px;
+  }
+  #youtube{
+    margin-top:8px;
+  }
+  #profilepic{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    top:80px;
+    margin-right: 54vw;
+  }
+  #about{
+    margin: 20px 15px 20px 15px;
+  }
+  #textcontainer
+  {
+    width: 94vw;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 15px;
+  }
+  #blogpost{
+    margin-bottom:10px;
+  }
+  .blogtext{
+    font-size: 15px;
+  }
+  .blogheader{
+    font-size: 20px;
+  }
+  #footerbar{
+    flex-wrap: wrap;
+    height:180px;
+  }
+  #footerleft{
+    width:100vw;
+    height:70px;
+    margin-top: 20px;
+  }
+  #manage{
+    margin-bottom: 0;
+  }
+  #since2018{
+    margin-bottom: 0;
+  }
+  #ytlogo{
+    margin-top: 17px;
+    margin-bottom: 0;
+    height: 60px;
+  }
+  #footerright{
+    height:60px;
+  }
+
+}
+@media (max-width:415px)
+{
+  .navbar{
+    height: 9vh;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .navcomponents{
+    margin-top: 0px;
+    font-size: 12px;
+    
+    height: 20px;
+  }
+  #aboutme{
+    margin-right: 0;
+  }
+  #name{
+    margin-top: 13px;
+    font-size: 21px;
+    width:100vw;
+    margin-bottom: 5px;
+  }
+  #name:hover{
+    box-shadow: inset 0px -4px rgba(109,26,54,0);
+    transition-duration: 0.2s;
+  }
+  #platforms{
+    margin-left: 0;
+    margin-right:40px;
+  }
+  #links a {
+    scale: 0.5;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .logo{
+    display: block;
+    border:0;
+  }
+  #links{
+    margin-left: 265px;
+  }
+  #instagram{
+    position: relative;
+  }
+  #facebook{
+    position: relative;
+    right: 10px;
+  }
+  #x{
+    position: relative;
+    right: 20px;
+  }
+  #youtube{
+    position: relative;
+    right: 30px;
+  }
+  #linkedin{
+    position: relative;
+    right: 40px;
+  }
+  #gmail{
+    margin-left: 0;
+    margin-right: 0;
+    scale:0.8;
+    margin-top:11px;
+    position: relative;
+    right:50px;
+  }
+  #email{
+    position: relative;
+    bottom: 20px;
+  }
+  #linkedin{
+    margin-top: 5px;
+  }
+  #youtube{
+    margin-top:8px;
+  }
+  .logo{
+    bottom:10px;
+  }
+  #profilepic{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    top:45px;
+    margin-right: 57vw;
+  }
+  #about{
+    margin: 0px 10px 20px 10px;
+  }
+  #textcontainer
+  {
+    width: 94vw;
+    font-size: 13px;
+    font-weight: 100;
+    margin-bottom: 15px;
+  }
+  #container{
+    margin-top: 20px;
+  }
+  #blogpost{
+    margin: 0;
+  }
+  .blogtext{
+    font-size: 13px;
+  }
+  .blogheader{
+    font-size: 17px;
+  }
+  #footerbar{
+    flex-wrap: wrap;
+    height:170px;
+  }
+  #footerleft{
+    width:100vw;
+    height:70px;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  #manage{
+    margin-bottom: 0;
+  }
+  #since2018{
+    margin-bottom: 0;
+  }
+  #ytlogo{
+    margin-top: 7px;
+    margin-bottom: 10px;
+    height: 60px;
+    scale:0.8
+  }
+  #footerright{
+    height:50px;
+    font-size: 13px;
+  }
+}
+@media (max-width:330px)
+{
+  .navbar{
+    height: 8vh;
+  }
+  .navcomponents{
+    margin-top: 0px;
+    font-size: 11px;
+    height: 19px;
+  }
+  #aboutme{
+    margin-right: 0;
+  }
+  #name{
+    margin-top: 9px;
+    font-size: 19px;
+    width:100vw;
+    margin-bottom: 2px;
+  }
+  #name:hover{
+    box-shadow: inset 0px -4px rgba(109,26,54,0);
+    transition-duration: 0.2s;
+  }
+  #platforms{
+    margin-left: 0;
+    margin-right:35px;
+  }
+  #links a {
+    scale: 0.4;
+    margin-left: 0;
+  }
+  .logo{
+    display: block;
+    border:0;
+  }
+  #links{
+    margin-left: 275px;
+  }
+  #instagram{
+    position: relative;
+  }
+  #facebook{
+    position: relative;
+    right: 15px;
+  }
+  #x{
+    position: relative;
+    right: 30px;
+  }
+  #youtube{
+    position: relative;
+    right: 45px;
+  }
+  #linkedin{
+    position: relative;
+    right: 60px;
+  }
+  #gmail{
+    margin-left: 0;
+    margin-right: 0;
+    scale:0.6;
+    margin-top:11px;
+    position: relative;
+    right:75px;
+  }
+  #email{
+    position: relative;
+    bottom: 30px;
+  }
+  #linkedin{
+    margin-top: 6.5px;
+  }
+  #youtube{
+    margin-top:8px;
+  }
+  .logo{
+    bottom:10px;
+  }
+  #profilepic{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 55px;
+    margin-top: 20px;
+    top:45px;
+    margin-right: 61vw;
+  }
+  #about{
+    margin: 0px 5px 10px 5px;
+  }
+  #textcontainer
+  {
+    width: 94vw;
+    font-size: 11px;
+    font-weight: 100;
+    margin-bottom: 5px;
+  }
+  #container{
+    margin-top: 15px;
+  }
+  #blogpost{
+    margin: 0;
+  }
+  .blogtext{
+    font-size: 11px;
+  }
+  .blogheader{
+    font-size: 15px;
+  }
+  #footerbar{
+    flex-wrap: wrap;
+    height:160px;
+  }
+  #footerleft{
+    width:100vw;
+    height:70px;
+    margin-top: 10px;
+    font-size: 11px;
+  }
+  #manage{
+    margin-bottom: 0;
+  }
+  #since2018{
+    margin-bottom: 0;
+  }
+  #ytlogo{
+    margin-top: 7px;
+    margin-bottom: 10px;
+    height: 60px;
+    scale:0.7
+  }
+  #footerright{
+    height:50px;
+    font-size: 11px;
+  }
+}
