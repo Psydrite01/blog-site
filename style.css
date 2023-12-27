@@ -5,6 +5,7 @@
 }
 #topic{
   position:absolute;
+  visibility: hidden;
 }
 .navbar{
   display: flex;
@@ -21,11 +22,28 @@
   margin-top: 5vh;
   font-size: 22px;
 }
+.hiddennavbar{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 3;
+  position: fixed;
+  visibility: hidden;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hiddennavcomponents{
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  border:0;
+}
 #backimg{
   content: "";
   height: 100vh;
   width:1536px;
-  background-image: url(assets/greenwallpaper.jpg);
+  background-image: url(/assets/greenwallpaper.jpg);
   background-size:cover;
   background-position: center;
   background-color: black;
@@ -44,7 +62,7 @@
   transition-duration: 0.2s;
 }
 #articles{
-  margin-left: 400px;
+  margin-left: 350px;
 }
 #articles:hover{
   box-shadow: inset 0px -4px rgba(109,26,54,0.9);
@@ -62,6 +80,16 @@
   box-shadow: inset 0px -4px rgba(109,26,54,0.9);
   transition-duration: 0.2s;
 }
+#dropdown{
+  height: 30px;
+  width: 30px;
+  border: 0;
+  background-color: rgba(100, 100, 100, 0);
+  background-image: url(/assets/dropdown.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  visibility:hidden;
+}
 #profilepic{
   margin-top: 18vh;
   height: 300px;
@@ -69,7 +97,7 @@
   border-radius: 50%;
   background-color: white;
   z-index: 1;
-  background-image: url(assets/profilepic.jpg);
+  background-image: url(/assets/profilepic.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -222,6 +250,9 @@
     font-size:35px;
     font-weight: 500;
   }
+  #articles{
+    margin-left: 260px;
+  }
   #footerleft{
     display: flex;
     flex-direction: column;
@@ -258,7 +289,7 @@
     font-weight: 500;
   }
   #articles{
-    margin-left: 200px;
+    margin-left: 150px;
   }
   #footerleft{
     display: flex;
@@ -315,7 +346,7 @@
     margin-left: 2vw;
   }
   #articles{
-    margin-left: 50px;
+    margin-left: 20px;
   }
   #footerleft{
     display: flex;
@@ -376,15 +407,15 @@
   }
   .navcomponents{
     color: white;
-    margin-top: 5vh;
+    margin-top: 35px;
     font-size: 16px;
   }
   .navbar{
-    height: 10vh;
+    height: 100px;
     margin-bottom: 0;
   }
   #articles{
-    margin-left: 50px;
+    margin-left: 10px;
   }
   #footerleft{
     display: flex;
@@ -432,7 +463,7 @@
 @media (max-width:650px)
 {
   .navbar{
-    height: 8vh;
+    height: 80px;
     margin-bottom: 0;
   }
   .navcomponents{
@@ -444,7 +475,7 @@
     font-size: 24px;
   }
   #articles{
-    margin-left: 5vw;
+    margin-left: 0;
   }
   #links a {
     scale: 0.8;
@@ -452,7 +483,7 @@
     margin-right: 0;
   }
   #links{
-    height: 100px;
+    height: auto;
   }
   .logo{
     height: 44px;
@@ -469,7 +500,8 @@
     margin-right: 47vw;
   }
   #name{
-    margin-right: 0vw;
+    margin-right: 0;
+    margin-left: 0;
     font-size:24px;
     font-weight: 500;
   }
@@ -504,32 +536,60 @@
 @media (max-width:500px)
 {
   .navbar{
-    height: 11vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 65px;
     margin-bottom: 0;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
   .navcomponents{
     margin-top: 6px;
     font-size: 15px;
-    
     height: 30px;
   }
   #aboutme{
     margin-right: 0;
+    position: fixed;
+    visibility: hidden;
   }
   #name{
-    margin-top: 13px;
+    margin: 13px 8vw 5px 2vw;
     font-size: 24px;
-    width:100vw;
-    margin-bottom: 5px;
   }
   #name:hover{
     box-shadow: inset 0px -4px rgba(109,26,54,0);
     transition-duration: 0.2s;
   }
   #articles{
-    margin-left: 0vw;
+    position: fixed;
+    visibility: hidden;
+  }
+  #posts{
+    position:fixed;
+    visibility: hidden;
+  }
+  #merch{
+    position: fixed;
+    visibility: hidden;
+  }
+  .hiddennavbar{
+    z-index: 3;
+    top:63px;
+    right:-2vw;
+  }
+  .hiddennavcomponents{
+  padding: 10px 10px 0 15px;
+  }
+  #dropdown{
+    visibility:visible;
+    margin: 13px 0 0 0;
+    position: fixed;
+    right:4vw;
+  }
+  #platforms{
+    margin-left: 0;
+    margin-right:40px;
   }
   #links a {
     scale: 0.6;
@@ -538,6 +598,7 @@
   }
   #links{
     margin-left: 265px;
+    height: auto;
   }
   #gmail{
     margin-left: 0;
@@ -606,25 +667,33 @@
 @media (max-width:415px)
 {
   .navbar{
-    height: 9vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 50px;
     margin-bottom: 0;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
   .navcomponents{
-    margin-top: 0px;
-    font-size: 12px;
-    
-    height: 20px;
-  }
-  #aboutme{
-    margin-right: 0;
+    margin-top: 6px;
+    font-size: 15px;
+    height: 30px;
   }
   #name{
-    margin-top: 13px;
-    font-size: 21px;
-    width:100vw;
-    margin-bottom: 5px;
+    margin: 13px 40vw 5px 2vw;
+    font-size: 22px;
+  }
+  .hiddennavbar{
+    z-index: 3;
+    top:48px;
+    right:-2vw;
+  }
+  .hiddennavcomponents{
+  padding: 10px 10px 0 15px;
+  }
+  #dropdown{
+    margin: 13px 0 0 0;
+    scale:0.8;
   }
   #name:hover{
     box-shadow: inset 0px -4px rgba(109,26,54,0);
@@ -645,6 +714,7 @@
   }
   #links{
     margin-left: 265px;
+    height: auto;
   }
   #instagram{
     position: relative;
@@ -746,21 +816,28 @@
 @media (max-width:330px)
 {
   .navbar{
-    height: 8vh;
+    height: 40px;
   }
   .navcomponents{
     margin-top: 0px;
     font-size: 11px;
-    height: 19px;
   }
   #aboutme{
     margin-right: 0;
   }
   #name{
-    margin-top: 9px;
+    margin: 13px 40vw 5px 2vw;
     font-size: 19px;
-    width:100vw;
-    margin-bottom: 2px;
+  }
+  #dropdown{
+    margin: 6px 0 0 0;
+    scale:0.6;
+  }
+  .hiddennavbar{
+    z-index: 3;
+    top:22px;
+    right:-8vw;
+    scale:0.8
   }
   #name:hover{
     box-shadow: inset 0px -4px rgba(109,26,54,0);
