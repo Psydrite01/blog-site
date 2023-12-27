@@ -582,7 +582,7 @@
   padding: 10px 10px 0 15px;
   }
   #dropdown{
-    display:block;
+    visibility:visible;
     margin: 13px 0 0 0;
     position: fixed;
     right:4vw;
