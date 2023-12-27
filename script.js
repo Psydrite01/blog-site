@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
   const navButton = document.getElementById('dropdown');
-  const navOptions = document.querySelector('.hiddennavbar');
+  const navOptions = document.getElementsByClassName('hiddennavbar');
 
   navButton.addEventListener('click', function () {
-    if (navOptions.style.display === 'none' || navOptions.style.display === '') {
-      navOptions.style.display = 'block';
+    if (navOptions.style.visibility === 'hidden') {
+      navOptions.style.visibility = 'visible';
     } else {
-      navOptions.style.display = 'none';
+      navOptions.style.display = 'hidden';
     }
   });
 });

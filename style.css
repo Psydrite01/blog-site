@@ -5,7 +5,7 @@
 }
 #topic{
   position:absolute;
-  display: none;
+  visibility: hidden;
 }
 .navbar{
   display: flex;
@@ -28,7 +28,7 @@
   justify-content: flex-start;
   z-index: 3;
   position: fixed;
-  display: none;
+  visibility: hidden;
   font-size: 15px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -43,7 +43,7 @@
   content: "";
   height: 100vh;
   width:1536px;
-  background-image: url(./assets/greenwallpaper.jpg);
+  background-image: url(/assets/greenwallpaper.jpg);
   background-size:cover;
   background-position: center;
   background-color: black;
@@ -85,10 +85,10 @@
   width: 30px;
   border: 0;
   background-color: rgba(100, 100, 100, 0);
-  background-image: url(./assets/dropdown.png);
+  background-image: url(/assets/dropdown.png);
   background-size: contain;
   background-repeat: no-repeat;
-  display: none;
+  visibility: hidden;
 }
 #profilepic{
   margin-top: 18vh;
@@ -97,7 +97,7 @@
   border-radius: 50%;
   background-color: white;
   z-index: 1;
-  background-image: url(./assets/profilepic.jpg);
+  background-image: url(/assets/profilepic.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -551,7 +551,7 @@
   #aboutme{
     margin-right: 0;
     position: fixed;
-    display: none;
+    visibility: hidden;
   }
   #name{
     margin: 13px 8vw 5px 2vw;
@@ -563,15 +563,15 @@
   }
   #articles{
     position: fixed;
-    display: none;
+    visibility: hidden;
   }
   #posts{
     position:fixed;
-    display: none;
+    visibility: hidden;
   }
   #merch{
     position: fixed;
-    display: none;
+    visibility: hidden;
   }
   .hiddennavbar{
     z-index: 3;
@@ -709,7 +709,7 @@
     margin-right: 0;
   }
   .logo{
-    display: block;
+    visibility: visible;
     border:0;
   }
   #links{
@@ -852,7 +852,7 @@
     margin-left: 0;
   }
   .logo{
-    display: block;
+    visibility: visible;
     border:0;
   }
   #links{
