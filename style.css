@@ -43,7 +43,7 @@
   content: "";
   height: 100vh;
   width:1536px;
-  background-image: url(/assets/greenwallpaper.jpg);
+  background-image: url(./assets/greenwallpaper.jpg);
   background-size:cover;
   background-position: center;
   background-color: black;
@@ -85,7 +85,7 @@
   width: 30px;
   border: 0;
   background-color: rgba(100, 100, 100, 0);
-  background-image: url(/assets/dropdown.png);
+  background-image: url(./assets/dropdown.png);
   background-size: contain;
   background-repeat: no-repeat;
   display: none;
@@ -97,7 +97,7 @@
   border-radius: 50%;
   background-color: white;
   z-index: 1;
-  background-image: url(/assets/profilepic.jpg);
+  background-image: url(./assets/profilepic.jpg);
   background-size: cover;
   background-position: center;
 }
