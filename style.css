@@ -9,7 +9,7 @@
 }
 .navbar{
   display: flex;
-  height: 12vh;
+  height: 90px;
   width: 100vw;
   background-color: rgba(20, 20, 20, 0.95);
   justify-content: space-evenly;
@@ -21,7 +21,7 @@
 }
 .navcomponents{
   color: white;
-  margin-top: 5vh;
+  margin-top: 36px;
   font-size: 22px;
 }
 .hiddennavbar{
@@ -55,7 +55,7 @@
   margin-right: 25vw;
   font-size:35px;
   font-weight: 500;
-  margin-top: 3.5vh;
+  margin-top: 26px;
 }
 #name:hover{
   box-shadow: inset 0px -4px rgba(109,26,54,0.9);
@@ -91,7 +91,7 @@
   visibility: hidden;
 }
 #profilepic{
-  margin-top: 18vh;
+  margin-top: 135px;
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -252,7 +252,7 @@
 }
 #articlecontainer{
   display: flex;
-  margin-top: 15vh;
+  margin-top: 110px;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -341,7 +341,65 @@
 .articlebutton:active{
   background-color: rgba(10, 113, 141, 0.1)
 }
-
+#backimg-merch{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#merchcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#merchtext{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#comingsoon{
+  font-size: 70px;
+}
+#workprogresssection{
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+}
+#workprogress{
+  font-size: 19px;
+  margin: 25px 0 0 14px;
+}
+#workloadinglogo{
+  height: 40px;
+  width: 40px;
+  background-image: url(./assets/merchloading.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 15px 0 0 5px;
+  animation: loadinganim;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  box-sizing: border-box;
+}
+#merchlogo{
+  height: 400px;
+  width: 400px;
+  background-image: url(./assets/merchlogo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@keyframes loadinganim {
+  from{
+    rotate: 0deg;
+  }
+  to{
+    rotate: 360deg;
+  }
+}
 
 
 
@@ -390,6 +448,24 @@
   }
   #randomblog{
     width:38vw;
+  }
+  #comingsoon{
+    font-size: 65px;
+  }
+  #workprogresssection{
+    height: 65px;
+  }
+  #workprogress{
+    font-size: 18px;
+    margin: 22px 0 0 12px;
+  }
+  #workloadinglogo{
+    height: 38px;
+    width: 38px;
+  }
+  #merchlogo{
+    height: 380px;
+    width: 380px;
   }
 }
 @media (max-width:1100px)
@@ -456,6 +532,24 @@
     scale:0.9;
     margin: 40px 40px 10px 10px;
     background-color: white;
+  }
+  #comingsoon{
+    font-size: 60px;
+  }
+  #workprogresssection{
+    height: 60px;
+  }
+  #workprogress{
+    font-size: 17px;
+    margin: 20px 0 0 11px;
+  }
+  #workloadinglogo{
+    height: 35px;
+    width: 35px;
+  }
+  #merchlogo{
+    height: 350px;
+    width: 350px;
   }
 }
 @media (max-width:900px)
@@ -539,6 +633,24 @@
     margin: 25px -5px -5px 5px;
     background-color: white;
   }
+  #comingsoon{
+    font-size: 50px;
+  }
+  #workprogresssection{
+    height: 55px;
+  }
+  #workprogress{
+    font-size: 15px;
+    margin: 19px 0 0 9px;
+  }
+  #workloadinglogo{
+    height: 32px;
+    width: 32px;
+  }
+  #merchlogo{
+    height: 320px;
+    width: 320px;
+  }
 }
 @media (max-width:800px)
 {
@@ -621,6 +733,24 @@
     scale:0.75;
     margin: 10px -15px -15px 0;
     background-color: white;
+  }
+  #comingsoon{
+    font-size: 40px;
+  }
+  #workprogresssection{
+    height: 50px;
+  }
+  #workprogress{
+    font-size: 13px;
+    margin: 19px 0 0 5px;
+  }
+  #workloadinglogo{
+    height: 26px;
+    width: 26px;
+  }
+  #merchlogo{
+    height: 260px;
+    width: 260px;
   }
 }
 @media (max-width:650px)
@@ -718,7 +848,7 @@
     width: 80vw;
   }
   #articlecontainer{
-    margin-top: 13vh;
+    margin-top: 96px;
   }
   #articlebox1{
     background-image: url(./assets/articleboximage1.jpg);
@@ -739,6 +869,24 @@
     background-image: url(./assets/articleboximage4.jpeg);
     background-size:cover;
     background-position: center;
+  }
+  #comingsoon{
+    font-size: 30px;
+  }
+  #workprogresssection{
+    height: 40px;
+  }
+  #workprogress{
+    font-size: 11px;
+    margin: 19px 0 0 5px;
+  }
+  #workloadinglogo{
+    height: 20px;
+    width: 20px;
+  }
+  #merchlogo{
+    height: 200px;
+    width: 200px;
   }
 }
 @media (max-width:500px)
@@ -872,6 +1020,26 @@
   }
   #articlecontainer{
     margin-top: 75px;
+  }
+  #comingsoon{
+    font-size: 24px;
+    z-index: 2;
+  }
+  #workprogresssection{
+    height: 38px;
+  }
+  #workprogress{
+    font-size: 13px;
+    margin: 15px 0 0 3px;
+  }
+  #workloadinglogo{
+    height: 16px;
+    width: 16px;
+  }
+  #merchlogo{
+    height: 200px;
+    width: 200px;
+    margin-left: -20px;
   }
 }
 @media (max-width:415px)
@@ -1036,6 +1204,28 @@
   #articlecontainer{
     margin-top: 60px
   }
+  #comingsoon{
+    font-weight: 500;
+    font-size: 24px;
+    z-index: 2;
+  }
+  #workprogresssection{
+    height: 38px;
+  }
+  #workprogress{
+    font-size: 13px;
+    font-weight: 500;
+    margin: 15px 0 0 3px;
+  }
+  #workloadinglogo{
+    height: 16px;
+    width: 16px;
+  }
+  #merchlogo{
+    height: 185px;
+    width: 185px;
+    margin-left: -50px;
+  }
 }
 @media (max-width:330px)
 {
@@ -1191,5 +1381,27 @@
   }
   #articlecontainer{
     margin-top: 40px;
+  }
+  #comingsoon{
+    font-weight: 500;
+    font-size: 20px;
+    z-index: 2;
+  }
+  #workprogresssection{
+    height: 38px;
+  }
+  #workprogress{
+    font-size: 11px;
+    font-weight: 500;
+    margin: 15px 0 0 3px;
+  }
+  #workloadinglogo{
+    height: 16px;
+    width: 16px;
+  }
+  #merchlogo{
+    height: 155px;
+    width: 155px;
+    margin-left: -45px;
   }
 }
