@@ -445,7 +445,7 @@
 }
 #am-email{
   width:auto;
-  margin: -15px 0 100px 10px;
+  margin: -15px 0 100px 20px;
 }
 
 
@@ -518,6 +518,9 @@
     right: -40px;
     border: 0;
     border-left: 70px solid black;
+  }
+  #am-email{
+    margin: -15px 0 100px 18px;
   }
 }
 @media (max-width:1100px)
@@ -617,6 +620,9 @@
     font-size: 20px;
     margin: 10px 0 0 80px;
     width: 600px;
+  }
+  #am-email{
+    margin: -15px 0 100px 32px;
   }
 }
 @media (max-width:900px)
